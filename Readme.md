@@ -124,9 +124,119 @@ The goal is to **automate decisions** or **assist human operators** in respondin
 5. User sees output → Takes action (manual or automatic)
 
 
+
+## Managing contailers
+
+### 1. Remove all containers
+
+```docker
+# list all containers
+docker container ls -a
+
+# remove all containers
+docker container prune
+```
+### 1. Remove all images
+
+```docker
+# list all images
+docker image ls -a
+
+# remove all images
+docker image prune -a 
+```
+
+### 1. Remove all volumes
+
+```docker
+# list all volumes
+docker volume ls -a
+
+# remove all volumes
+docker volume prune -a 
+```
+
+### 1. Remove all networks
+
+```docker
+# list all networks
+docker network ls -a
+
+# remove all networks
+docker network prune
+```
+
+
 ## Containers
 1. Server [https://github.com/hanattaw/Iot-class-2025-server](https://github.com/hanattaw/Iot-class-2025-server)
-2. Gateway [https://github.com/hanattaw/Iot-class-2025-gateway](https://github.com/hanattaw/Iot-class-2025-gateway)
-3. Sensor
-4. Batch ML
-5. Online ML
+1. Gateway [https://github.com/hanattaw/Iot-class-2025-gateway](https://github.com/hanattaw/Iot-class-2025-gateway)
+1. Publisher [https://github.com/hanattaw/Iot-class-2025-publisher](https://github.com/hanattaw/Iot-class-2025-publisher)
+1. Subscriber [https://github.com/hanattaw/Iot-class-2025-subscriber](https://github.com/hanattaw/Iot-class-2025-subscriber)
+1. MQTT-Bridge-Kafka [https://github.com/hanattaw/Iot-class-2025-mqtt-bridge-kafka](https://github.com/hanattaw/Iot-class-2025-mqtt-bridge-kafka)
+1. Data to Influxdb [https://github.com/hanattaw/Iot-class-2025-data-to-influxdb](https://github.com/hanattaw/Iot-class-2025-data-to-influxdb)
+1. Kafa-to-JSONL [https://github.com/hanattaw/Iot-class-2025-kafka-to-jsonl](https://github.com/hanattaw/Iot-class-2025-kafka-to-jsonl)
+1. Train Data [https://github.com/hanattaw/Iot-class-2025-train-from-data](https://github.com/hanattaw/Iot-class-2025-train-from-data)
+1. Predict-then-Infulxdb [https://github.com/hanattaw/Iot-class-2025-predict-then-influxdb](https://github.com/hanattaw/Iot-class-2025-predict-then-influxdb)
+1. Online ML [https://github.com/hanattaw/Iot-class-2025-online-ml-predict](https://github.com/hanattaw/Iot-class-2025-online-ml-predict)
+1. Device [https://github.com/hanattaw/Iot-class-2025-device](https://github.com/hanattaw/Iot-class-2025-device)
+
+
+
+
+```bash
+# Remove all containers
+docker container prune
+
+# Remove all volumes
+docker volume prune -a 
+
+# Remove all networks
+docker network prune
+
+# Remove all folders
+cd 
+sudo rm -rf Iot-class-2025-server
+sudo rm -rf Iot-class-2025-publisher
+sudo rm -rf Iot-class-2025-subscriber
+sudo rm -rf Iot-class-2025-mqtt-bridge-kafka
+sudo rm -rf Iot-class-2025-data-to-influxdb
+sudo rm -rf Iot-class-2025-kafka-to-jsonl
+sudo rm -rf Iot-class-2025-train-from-data
+sudo rm -rf Iot-class-2025-predict-then-influxdb
+sudo rm -rf Iot-class-2025-online-ml-predict
+
+
+cd 
+git clone https://github.com/hanattaw/Iot-class-2025-server
+git clone https://github.com/hanattaw/Iot-class-2025-publisher
+git clone https://github.com/hanattaw/Iot-class-2025-subscriber
+git clone https://github.com/hanattaw/Iot-class-2025-mqtt-bridge-kafka
+git clone https://github.com/hanattaw/Iot-class-2025-data-to-influxdb
+git clone https://github.com/hanattaw/Iot-class-2025-kafka-to-jsonl
+git clone https://github.com/hanattaw/Iot-class-2025-train-from-data
+git clone https://github.com/hanattaw/Iot-class-2025-predict-then-influxdb
+git clone https://github.com/hanattaw/Iot-class-2025-online-ml-predict
+
+```
+
+## Getting Server Containers 
+```bash
+cd 
+git clone https://github.com/hanattaw/Iot-class-2025-server
+git clone https://github.com/hanattaw/Iot-class-2025-publisher
+git clone https://github.com/hanattaw/Iot-class-2025-subscriber
+git clone https://github.com/hanattaw/Iot-class-2025-mqtt-bridge-kafka
+git clone https://github.com/hanattaw/Iot-class-2025-data-to-influxdb
+git clone https://github.com/hanattaw/Iot-class-2025-kafka-to-jsonl
+git clone https://github.com/hanattaw/Iot-class-2025-train-from-data
+git clone https://github.com/hanattaw/Iot-class-2025-predict-then-influxdb
+git clone https://github.com/hanattaw/Iot-class-2025-online-ml-predict
+
+```
+
+## Getting Gateway Container
+```bash
+cd 
+git clone https://github.com/hanattaw/Iot-class-2025-gateway
+
+```
